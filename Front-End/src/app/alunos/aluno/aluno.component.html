@@ -1,0 +1,16 @@
+<a href="#">
+  <div class="place-info-box">
+    <div *ngIf="alunoModel">
+      <div class="place-info-box-content">
+        <span class="place-info-box-text">{{ alunoModel.nome }} {{  alunoModel.sobrenome }}</span>
+        <br/>
+        <span class="place-info-box-detail"> {{  alunoModel.email }} </span>
+        <span class="place-info-box-detail"> {{  alunoModel.telefone }} </span>
+        <div *ngIf="!alunoModel.cpf">
+          <span class="place-info-box-detail">CPF: {{  alunoModel.cpf }}</span>
+        </div>
+        <!--Cliente: <a href="#" (click)="clicked()"> {{clientModel.nome}} </a> -->
+      </div>
+    </div>
+  </div>
+</a>
